@@ -1,0 +1,460 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6,body,p,ul,form,dl,dd,dt{
+    padding: 0;
+    margin: 0;
+}
+ul,li,p,body{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:visited{
+    color: #000;
+}
+img{
+    border: none;
+    display: block;
+}
+
+body{ 
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #eee;
+   
+    margin-bottom: 50px;
+}
+
+:root{
+    font-size: 5.6vw;
+}
+
+/* 上导航 */
+/* #top{
+    display: flex;
+    background-color:#fff;
+    padding: 10px 12px;
+
+  }
+  .search{
+    border-radius: 12px;
+    background: #fff;
+    flex-grow: 1;
+    display: flex;
+  }
+  #search{
+    border: none;
+    outline: none;
+    flex-grow: 2;
+    margin-right: 20px;
+}
+  .icon-search{
+    margin: 0px 7px;
+    font-size: 12px;
+  }
+  .txt{
+    font-size: 15px;
+    margin: 2px 7px;
+ }
+ .swiper-pagination{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(40%);
+    } */
+
+    /* 搜索框 */
+body{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    
+    margin: 0;
+    font-size: 12px;    
+    line-height: 12px;
+}
+#top{
+   position: fixed;
+   top: 0;
+   z-index: 9;
+   width: 100vW;
+  display: flex;
+  background-color: rgb(250, 250, 251);
+  padding: 0; 
+}
+.lj{
+    overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: rgb(86, 88, 90);
+  letter-spacing: 2px;
+  text-align: center;
+  flex-grow: 2;
+  border-top: 3px solid #4d74d3;
+  
+  border-bottom: 3px solid #4d74d3;
+}
+.s2{
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: rgb(86, 88, 90);
+  letter-spacing: 2px;
+  text-align: center;
+  flex-grow: 2;
+  
+}
+
+.bth{
+color: #fff;
+font-size: 20px;
+margin: 6px 6px;
+padding: 0;
+}
+.icon-tianjia{
+  color: black;
+  font-size: 27px;
+  margin-top: 10px;
+  margin-left: 0;
+  
+}
+.icon-xiaoxi1{
+  color: black;
+  font-size: 20px;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 0;
+  
+}
+.dot{
+  width: 16px;
+  height: 12px;
+  border-radius: 15px; 
+  position: absolute;
+  right: 43px;
+  top: 0;
+  background-color: #c00;
+  font-size: 9px;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #fff;
+  letter-spacing: 0;
+}
+.ss{
+ 
+  color: #4d74d3;
+  padding-right: 15px;
+  margin:0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 3px solid #4d74d3;
+  border-right: 3px solid #4d74d3;
+  border-bottom: 3px solid #4d74d3;
+}
+.s2>.swiper-wrapper>.swiper-slide{
+  
+  left: 0;
+width: 160px;
+}
+
+span{
+  letter-spacing: 15px;
+}
+.identify{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top: 3px solid #4d74d3;
+  border-left: 3px solid #4d74d3;
+  border-bottom: 3px solid #4d74d3;
+}
+.icon-icon{
+  margin-left: 20px;
+  color: rgb(55, 74, 183);
+  font-size: 20px;
+  
+}
+/* 搜索框止 */
+
+/* 选项栏 */
+/* .xuanxiang{
+    padding: 0;
+    position: fixed;
+    top: 34px;
+    margin-bottom: 10px;
+    bottom: none;
+    display: flex;
+    flex-grow: 2;
+    height: 50px; 
+    z-index: 9;
+    width: 100%;
+    line-height: 50px;
+}
+.span{
+    flex: 20%;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+} */
+
+/* 初始化样式 */
+*{
+    /* 内外边距为0 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.nav{
+    height: 40px;
+}
+.navlist li{
+    /* 通过左浮动让列表变为横排 */
+    float: left;
+    height: 40px;
+    width: 100px;
+    /* 让文本水平垂直居中 */
+    line-height: 40px;
+    text-align: center;
+}
+.navlist a{
+    /* 超链接改为黑色 */
+    color: black;
+    /* 把链接变为块显示 */
+    display: block;
+}
+.navlist{
+    width: 800px;
+    margin: auto;
+}
+/* 轮播图 */
+    body{
+            padding: 0;
+            margin: 0;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    /* 下导航 */
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    ul,p,body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .bnav{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 9;
+        background-color: #eee;
+    }
+
+    body{
+        margin-bottom: 50px;
+    }
+
+    .bnav>ul{
+        display: flex;
+    }
+
+    .bnav li{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bnav div{
+        position: relative;
+    }
+
+    .bnav svg{
+        font-size: 48px;
+        margin: 3px 0;
+        width: 100%;
+    }
+
+    .bnav p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #333;
+        text-align: center;
+    }
+    .ul2{
+        list-style: none;
+    }
+    .ul2,p,body{
+        padding: 0;
+        margin: 0;
+    }
+    .bnav1{
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    .bnav1> .ul2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bnav1 li{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .bnav1 svg{
+        font-size: 45px;
+        margin: 2px;
+        text-align: center;
+        
+    }
+    .bnav1 p{
+        font-size: 14px;
+        line-height: 20px;
+        flex-wrap: nowrap;
+        
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .bnav1 a{
+        color: #333;
+    
+    } 
+    /* 上图下文 */
+    .p{
+        padding: 0;
+        width: 100%;
+        font-size: 2.5vw;
+        margin-top: 2px;
+        
+    }
+    
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;/* “list-style: none”样式表示设置列表项标记的类型为空，即列表项前无标记。 */
+        
+    }
+    img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .jlist{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); /* 将容器分成两列 */
+         grid-gap: 6px; /*可选，设置行和列之间的间距 */ 
+         
+         
+        
+    }
+
+
+
+    /* .. */
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    ul{
+       list-style: none;
+    }
+    ul,p,body{
+       padding: 0;
+       margin: 0;
+    }
+    .bnav{
+       
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       
+       background-color: #eee;
+       
+    }
+    body{
+        margin-bottom: 50px;
+    }
+    .bnav>ul{
+       display: flex;
+    }
+    .bnav li{
+       width: 25%;
+       display: flex;
+       justify-content: center;
+    }
+    .bnav div{
+       position: relative;
+    }
+    .bnav svg{
+       font-size: 48px;
+       margin: 3px 0;
+    }
+    .bnav p{
+       font-size: 14px;
+       line-height: 24px;
+       color: #333;
+       text-align: center;
+    }
+    .p{
+        padding: 0;
+        width: 100%;
+        font-size: 2.5vw;
+        margin-top: 2px;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .jlist{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr); 
+         grid-gap: 6px;
+    }
