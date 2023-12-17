@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国加油优惠</title>
+    <script src="./iconfont/iconfont.js"></script> 
+    <link rel="stylesheet" href="./iconfont/iconfont.css"> 
+    <link rel="stylesheet" href="./css/jiayou.css">
+    <link rel="stylesheet" href="./css/dropload.css">
+</head>
+<body>
+    <header class="top">
+        <a href="./quanbugongju.html" class="fanhui"><span class="iconfont icon-fanhui"></span></a>
+        <div class="gongju">
+            <h1>全国加油优惠</h1>
+        </div>
+    </header>
+    <div class="container">
+        
+        <section class="home">
+            <ul>
+                <li>
+                    <img src="./img/jiayou/1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/2.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/3.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/4.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/5.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/6.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/7.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jiayou/8.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script src='./swiper/zepto.min.js'></script>
+    <script src='./swiper/dropload.min.js'></script>
+
+    <script>
+    $(function(){
+        var dropload = $('.home').dropload({
+
+            domUp:{
+                   domClass : 'dropload-up',
+                   domRefresh : '<div class="dropload-refresh">↓下拉刷新</div>',
+                   domUpdate  : '<div class="dropload-update">↑松开即可刷新</div>',
+                   domLoad : '<div class="dropload-load"><span class="loading"></span>正在刷新</div>'
+                },
+            domDown:{
+                   domClass : 'dropload-down',
+                   domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
+                   domLoad : '<div class="dropload-load"><span class="loading"></span>正在努力加载</div>',
+                   domNoData : '<div class="dropload-noData">暂无数据</div>'
+                },
+            //刷新
+            loadUpFn:function(){
+                console.log(1)
+            },
+            //加载
+            loadDownFn:function(){
+                console.log(2)
+                // $.ajax({
+                //     url:'http://rap2api.taobao.org/app/mock/316032/sjrjiayou',
+                //     data:{
+                //        page:1,
+                //        size:3                       
+                //     },
+                //     success:function(data){
+                //         var sjrjiayou = data.data.sjrjiayou;
+                //         var result = '';
+                //         $.each(sjrjiayou,function(jiayou,item){
+                //             result+=`
+                //             <li>
+                //                 <img src="${item.imgurl}" alt="">
+                //             </li>
+                //             `;
+                //         })
+                //         setTimeout(function(){
+                //             $('.home ul').append(result);
+                //             // 每次数据加载完，必须重置
+                //             dropload.resetload();
+                //         },1000)
+                //     },
+                //     error: function(xhr, type){
+                //     alert('Ajax error!');
+                //     // 即使加载出错，也得重置
+                //     dropload.resetload();
+                //     }
+                // })
+            }
+
+        })
+
+    })
+
+    </script>
+</body>
+</html>

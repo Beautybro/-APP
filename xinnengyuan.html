@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易车下导航</title>
+    <script src="./iconfont/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/xinnengyuan.css">
+    <style>
+
+        
+        h2{
+            font-size: 20px;
+            text-align: center;
+        }
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        ul{
+           list-style: none;
+        }
+        ul,p,body{
+           padding: 0;
+           margin: 0;
+        }
+        .bnav{
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           z-index: 9;
+           background-color: #eee;
+        }
+        body{
+            margin-bottom: 50px;
+        }
+        .bnav>ul{
+           display: flex;
+        }
+        .bnav li{
+           width: 25%;
+           display: flex;
+           justify-content: center;
+        }
+        .bnav div{
+           position: relative;
+        }
+        .bnav svg{
+           font-size: 48px;
+           margin: 3px 0;
+        }
+        
+        .bnav p{
+           font-size: 14px;
+           line-height: 24px;
+           color: #333;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bnav">
+        <ul>
+            <li>
+                <div>
+                    <a href="./shouye.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouye-zhihui"></use>
+                          </svg>
+                          <p>首页</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./xinnengyuan.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-qiche"></use>
+                          </svg>
+                          <p>新能源</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./xuanche.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-jiaoche"></use>
+                          </svg>
+                          <p>选车</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./ershouche.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhihuan1"></use>
+                          </svg>
+                          <p>二手车</p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="./wode.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yonghu_yonghu"></use>
+                          </svg>
+                          <p>我的</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
